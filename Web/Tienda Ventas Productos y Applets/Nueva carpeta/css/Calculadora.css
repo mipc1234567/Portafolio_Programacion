@@ -1,0 +1,624 @@
+<style type="text/css" instart_patch_id="87">.resistor-image {
+padding-left: 40px;
+}
+.calculator-input {
+	position: relative;
+	display: block;
+	width: 335px;
+	margin: 0px 10px 25px 4px;
+}
+.rtl .calculator-input {
+	position: relative;
+	display: block;
+	width: 335px;
+	margin: 0px 4px 25px 10px;
+}
+.res-select {
+	position: absolute;
+	right: 0;
+	left: 0;
+	background-color: #f1f1f1;
+	border: solid 1px #999;
+	height: 32px;
+	padding: 8px 8px 2px 8px;
+	box-sizing: border-box;
+	border-radius: 4px 0px 0px 4px;
+	font-weight: bold;
+	margin-left: -4px;
+	width: 100px;
+}
+.rtl .res-select {
+	position: absolute;
+	right: 0;
+	left: 0;
+	background-color: #f1f1f1;
+	border: solid 1px #999;
+	height: 32px;
+	padding: 8px 8px 2px 8px;
+	box-sizing: border-box;
+	border-radius: 0px 4px 4px 0px;
+	font-weight: bold;
+	margin-right: -4px;
+	width: 100px;
+}
+.calculator-input .selectColor dl {
+	border-radius: 0px 4px 4px 0px;
+	border-top: solid 1px #999;
+	border-right: solid 1px #999;
+	border-bottom: solid 1px #999;
+	border-left: none;
+	padding: 6px;
+	box-shadow: none;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	height: 32px;
+	font-size: 14px;
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: 5px 5px;
+	padding-left: 100px;
+	font-weight: bold;
+}
+.rtl .calculator-input .selectColor dl {
+	border-radius: 4px 0px 0px 4px;
+	border-top: solid 1px #999;
+	border-left: solid 1px #999;
+	border-bottom: solid 1px #999;
+	border-right: none;
+	padding: 6px;
+	box-shadow: none;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	height: 32px;
+	font-size: 14px;
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: 5px 5px;
+	padding-right: 100px;
+	font-weight: bold;
+}
+.current {
+	font-size: 14px;
+	border: solid 1px #999;
+	border-radius: 4px;
+	padding: 6px;
+	width: 325px;
+	background-color: #eee;
+	margin-bottom: 20px;
+	height: 18px;
+}
+.label {
+	float: right;
+}
+.rtl .label {
+	float: left;
+}
+.dropdown dt {
+	padding: 0px 8px 0px 8px;
+}
+.dropdown dd, .dropdown ul {
+	margin: 0px;
+	padding: 0px;
+}
+.dropdown dd {
+	position: relative;
+}
+.dropdown a, .dropdown a:visited {
+	color: #000;
+	text-decoration: none;
+	outline: none;
+}
+.dropdown dt a:hover {
+	color: #000;
+}
+.dropdown dt {
+	display: block;
+	padding-right: 8px;
+	cursor: pointer;
+}
+.dropdown dt a span {
+	cursor: pointer;
+	display: block;
+	padding-left: 10px;
+}
+.dropdown dd ul {
+	background: #fff none repeat scroll 0 0;
+	border: 1px solid #ddd;
+	display: none;
+	position: absolute;
+	width: 100%;
+	list-style: none;
+	float: right;
+	cursor: pointer;
+	z-index: 999;
+}
+.dropdown span.value {
+	display: none;
+}
+.dropdown dd ul li {
+	padding: 5px 8px 5px 8px;
+	display: block;
+}
+.dropdown dd ul li:hover {
+	background-color: #ccc;
+}
+.dropdown img {
+	margin-right: 5px;
+	width: 5%;
+}
+.rtl .dropdown img {
+	margin-left: 5px;
+	width: 5%;
+}
+.colorvisibility {
+	display: none;
+}
+.rte-crumbs {
+	padding:0 !important;
+}
+.calcResult span {
+	display: block;
+}
+.calculator {
+	display: block;
+}
+.calculator-description h2, .resistor-image h2 {
+	display: none;
+}
+.calcResults {
+	display: flex;
+	width:100%;
+}
+.calcResults div {
+	flex: auto;
+	text-align: center;
+	width: 100%;
+}
+.calcResults a {
+	display: block;
+	clear: both;
+}
+.calcResults div a img {
+	border: none;
+	height:64px;
+	width:64px;
+}
+.selector {
+	display: flex;
+	flex-wrap: wrap;
+}
+.selector div {
+	padding-right: 5px;
+	padding-bottom: 5px;
+}
+.related-resistors {
+	display: flex;
+}
+.related-products {
+	width: 48%;
+}
+.related-products h2 {
+	background-color: #333;
+	color: #fff;
+	padding: 5px;
+	text-align: center;
+	border: solid 1px #ccc;
+}
+.related-products ul {
+	display: table;
+	margin: 0;
+	padding: 0;
+}
+.related-products ul li {
+	float: left;
+	display: list-item;
+	padding: 0px;
+	width: 48%;
+	padding-right: 2%;
+	list-style: none;
+	margin: 0px;
+}
+.calcViewResults {
+	text-align: center;
+	padding: 5px;
+	font-weight: bold;
+}
+.resCalcSearch {
+	float: right;
+}
+.rtl .resCalcSearch {
+	float: left;
+}
+.resCalcSearch a {
+	text-decoration: none;
+	color: black;
+}
+.rightCol__content h2 {
+	padding-top: 16px;
+}
+/* Resistor Calculator Test */
+.rightCol__content h2 {padding-top: 16px;}
+.featured-container {display: -ms-flexbox; display: -webkit-flex; display: flex; flex-flow: row wrap; margin: 10px -5px; padding: 0;}
+.featured-content {position: relative; width: 100%; -webkit-flex: 1 1 auto; -ms-flex: 1 1 auto; flex: 1 1 auto; justify-content: flex-end; margin: 5px; padding: 10px; border: 1px solid #ccc; box-sizing: content-box; overflow:hidden; background-color: #fff;}
+.featured-content .product-imagery {display: block; float: left; width: 75px; height: 75px; margin: 0 7px 7px 0; padding: 0; border: 1px solid #999; border-radius: 10px; box-sizing: border-box;}
+.featured-content .product-imagery img {display: block; width: 100%; height: auto; border-radius: 10px;}
+.featured-content .product-desc {display: block; margin: 5px 0; padding: 0; font-weight: bold;}
+.featured-content .product-desc a {text-decoration: none; color: #000;}
+.featured-content .product-desc a:hover {text-decoration: none; color: #cc0000;}
+.featured-content .product-mfr {display: block; margin: 0; padding: 0;}
+
+.part-details__container {display: block; float: left; width: 50%;}
+.part-details__container span {display: block; margin: 0 0 5px 0;}
+.part-details__container span:last-child {margin: 0;}
+
+.qty-unit-price__container {display: block; float: right; width: 50%; text-align: right;}
+.qty-unit-price__container span {display: block; margin: 0 0 5px 0;}
+.qty-unit-price__container span:last-child {margin: 0;}
+.qty-unit-price__container span.unit-price {color: #cc0000; font-weight: bold;}
+
+.resistorBtn {display: block !important; width: 55%; margin: 0 auto;}
+
+.calculator > .calculator-input {width: auto; max-width: 335px; margin: 0 0 25px 4px;}
+.calculator > div.current {width: auto; max-width: 325px;}
+.calculator .selector div:nth-child(4) {display: none;}
+
+/* ADJUST RELATED RESISTOR TABLE */
+.calcResults {flex-flow: row wrap; margin: 0 -5px 10px;}
+.calcResults div {flex: 1 0 auto; width: 15%; justify-content: flex-end; margin: 5px;}
+
+/* CONVERT PAGE TO GRID */
+.calculator-wrapper > .calculator {display: -ms-grid; display: grid; -ms-grid-columns: 45% 55%; grid-template-columns: 45% 55%;}
+.calculator > div {
+    grid-column: 1 / 2; 
+    -ms-grid-column: 1; 
+    -ms-grid-column-span: 1; 
+    grid-column-start: 1; 
+    grid-column-end: 2;
+}
+.calculator > h3:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.calculator > div:nth-child(2) {
+    grid-column: 1 /2;
+    grid-row: 2 / 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.calculator > h3:nth-child(5) {
+    grid-column: 1 /2;
+    grid-row: 3 / 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.calculator > div.calculator {
+    grid-column: 1 /2;
+    grid-row: 4 / 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.calculator > div.current {
+    grid-column: 1 /2;
+    grid-row: 5 / 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+.calculator > div.relatedResistors {
+    grid-column: 1 / 3; 
+    grid-row: 6 / 7;
+    -ms-grid-column: 1; 
+    -ms-grid-column-span: 2; 
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
+    grid-column-start: 1; 
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+.calculator > div.calcResults {
+    grid-column: 1 / 3; 
+    grid-row: 7 / 8;
+    -ms-grid-column: 1; 
+    -ms-grid-column-span: 2; 
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 1;
+    grid-column-start: 1; 
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+.calculator > div.calcViewResults {
+    grid-column: 1 / 3; 
+    grid-row: 8 / 9;
+    -ms-grid-column: 1; 
+    -ms-grid-column-span: 2; 
+    -ms-grid-row: 8;
+    -ms-grid-row-span: 1;
+    grid-column-start: 1; 
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 9;
+}
+.calculator > div.related-resistors {
+    grid-column: 1 / 3; 
+    grid-row: 9 / 10;
+    -ms-grid-column: 1; 
+    -ms-grid-column-span: 2; 
+    -ms-grid-row: 9;
+    -ms-grid-row-span: 1;
+    grid-column-start: 1; 
+    grid-column-end: 3;
+    grid-row-start: 9;
+    grid-row-end: 10;
+}
+.calculator > div.resistor-image {display: flex; flex-flow: row wrap; flex: 1 0 100%; width: 100%; height: auto; 
+    grid-column: 2 / 3; 
+    grid-row: 1 / 6;
+    -ms-grid-column: 2; 
+    -ms-grid-column-span: 1; 
+    -ms-grid-row: 1; 
+    -ms-grid-row-span: 5;
+    grid-column-start: 2; 
+    grid-column-end: 3; 
+    grid-row-start: 1; 
+    grid-row-end: 6;
+}
+.calculator > div.resistor-image a {margin: 0 auto;}
+.resistor-image__container {display: block; width: 90%; margin: 0 auto;}
+.resistor-image h2 {display: none; width: auto;}
+.resistor-image img {display: block; width: 100%; max-width: 500px; height: auto; margin: 0 auto; text-align: center;}
+span.learn-about-resistors {display: block; margin: 10px auto; padding: 0 10px; font-size: 14px; text-align: center;}
+
+/* PSZOOMIE */
+.pszoomie {position: fixed; border: 1px solid #000; z-index:3}
+.psshadow{-moz-box-shadow:3px 3px 5px 6px #ccc; -webkit-box-shadow:3px 3px 5px 6px #ccc; box-shadow:3px 3px 5px 6px #ccc; filter:progid:DXImageTransform.Microsoft.Shadow(Strength=16,Direction=135,Color=#C0C0C0);}
+
+/* Media Queries */
+/* Large Devices - Desktops */
+@media screen and (max-width: 1199px) {
+.resistor-image {
+padding-left: 0px;
+}
+    .calculator-wrapper > .calculator {
+        -ms-grid-columns: 48% 4% 48%; 
+        grid-template-columns: 48% 4% 48%;
+    }
+    .calcResults div {width: auto;}
+    .calculator > div.relatedResistors {
+        grid-column: 1 / 4; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 3; 
+        grid-column-start: 1; 
+        grid-column-end: 4;
+    }
+    .calculator > div.calcResults {
+        grid-column: 1 / 4; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 3; 
+        grid-column-start: 1; 
+        grid-column-end: 4;
+    }
+    .calculator > div.calcViewResults {
+        grid-column: 1 / 4; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 3; 
+        grid-column-start: 1; 
+        grid-column-end: 4;
+    }
+    .calculator > div.related-resistors {
+        grid-column: 1 / 4; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 3; 
+        grid-column-start: 1; 
+        grid-column-end: 4;
+    }
+    .calculator > div.resistor-image {
+        grid-column: 3 / 4;
+        grid-row: 3 / 6;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 1;
+        -ms-grid-row: 3; 
+        -ms-grid-row-span: 3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3; 
+        grid-row-end: 6;
+    }
+    .resistor-image__container {width: 100%;}
+}
+
+/* Medium Devices - tablets */
+@media screen and (max-width: 991px) {
+    .calculator-wrapper > .calculator {-ms-grid-columns: 100%; grid-template-columns: 100%}
+
+    .calculator > div.relatedResistors {
+        grid-column: 1 / 2; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 1; 
+        grid-column-start: 1; 
+        grid-column-end: 2;
+    }
+    .calculator > div.calcResults {
+        grid-column: 1 / 2; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 1; 
+        grid-column-start: 1; 
+        grid-column-end: 2;
+    }
+    .calculator > div.calcViewResults {
+        grid-column: 1 / 2; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 1; 
+        grid-column-start: 1; 
+        grid-column-end: 3;
+    }
+    .calculator > div.related-resistors {
+        grid-column: 1 / 2; 
+        grid-row: 10 / 11;
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 1; 
+        -ms-grid-row: 10;
+        -ms-grid-row-span: 1;
+        grid-column-start: 1; 
+        grid-column-end: 3;
+        grid-row-start: 10;
+        grid-row-end: 11;
+    }
+    .calculator > div.resistor-image {
+        grid-column: 1 / 2; 
+        grid-row: 9 / 10;
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 1; 
+        -ms-grid-row: 9; 
+        -ms-grid-row-span: 1; 
+        grid-column-start: 1; 
+        grid-column-end: 2; 
+        grid-row-start: 9; 
+        grid-row-end: 10;
+    }
+    .resistor-image h2 {display: block; padding: 5px; background: #333; color: #fff; text-align: center; border: 1px solid #ccc;}
+    .resistor-image img {width: 100%; margin: 15px auto;}
+}
+
+/* Small Devices - landscape phones */
+@media screen and (max-width: 768px) {
+    #pszoomie {display: none !important;}
+}
+
+/* Extra Small Devices - portrait phones */
+@media screen and (max-width: 600px) {
+.calculator > .calculator-input {width: auto; max-width: 100%; margin: 0 0 25px 4px;}
+.calculator > div.current {width: auto; max-width: 100%;}
+    .resistor-image img {width: 100%; margin: 15px auto;}
+	.related-resistors {
+		display: block;
+	}
+	.related-products ul li {
+		width: 100%;
+		padding: 0%;
+		list-style: none;
+		margin: 0px;
+	}
+	.related-products {
+		width: 100%;
+	}
+	.current {
+		width: 101%;
+		box-sizing: border-box;
+		height: 32px;
+	}
+	.calculator-input {
+		width:100%;
+	}
+	.rtl .calculator-input {
+		width:100%;
+	}
+	.calculator input {
+		max-width:100%;
+	}
+	.calculator-wrapper {
+		display:flex;
+		flex-direction:column-reverse;
+	}
+	.calculator-description h2, resistor-image h2 {
+		display: block;
+	}
+	.calcResults {
+		display: inline-block;
+		width:100%;
+	}
+	.calcResult span {
+		display: flex;
+	}
+	.calcResults div {
+		text-align: left;
+		clear:both;
+	}
+	.rtl .calcResults div {
+		text-align: right;
+	}
+	.calcResults div a img {
+		border: none;
+		height:64px;
+		width:64px;
+		float: left;
+		padding: 0px 10px 10px 0px;
+	}
+	.rtl .calcResults div img {
+		float: right;
+		margin-right:0;
+		margin-left:10px;
+	}
+	.calcResults a {
+		display: inline;
+		clear: both;
+	}
+	.selection {
+		margin-right: 0px;
+	}
+	.calculator {
+		display: block;
+	}
+	.calculator select {
+		border: 0px 4px 4px 0px;
+		width: 60%;
+	}
+	.dropdown img {
+		margin-right: 5px;
+		width: 10px;
+	}
+.dropdown dd ul li {
+	padding: 8px 8px 8px 8px;
+	display: block;
+}
+}
+
+/* Extra Small Devices - portrait phones */
+@media screen and (max-width: 575px) {}
+
+/* For Smaller Devices */
+@media screen and (max-width: 376px) {}
+
+/* Print Styles */
+@media print {}
+
+@media screen and (max-width: 1100px) {
+	.related-products ul li {
+		width: 100%;
+		padding: 0%;
+		list-style: none;
+		margin: 0px;
+	}
+}

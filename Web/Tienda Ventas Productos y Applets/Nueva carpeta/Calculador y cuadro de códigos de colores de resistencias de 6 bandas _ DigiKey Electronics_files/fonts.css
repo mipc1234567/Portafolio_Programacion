@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+  font-family: 'dk';
+  src:  url('/-/media/designer/global/fonts/dk_eot.eot?jeznaw');
+  src:  url('/-/media/designer/global/fonts/dk_eotie.eot?jeznaw#iefix') format('embedded-opentype'),
+    url('/-/media/designer/global/fonts/dk_ttf.ttf?jeznaw') format('truetype'),
+    url('/-/media/designer/global/fonts/dk_woff.woff?jeznaw') format('woff'),
+    url('/-/media/designer/global/fonts/dk_svg.svg?jeznaw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

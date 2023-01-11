@@ -1,0 +1,16 @@
+(function(){
+  window['optimizely'] = window['optimizely'] || [];
+  window['optimizely'].push(['activateGeoDelayedExperiments', {
+    'location':{
+      'city': "BOGOTA",
+      'continent': "SA",
+      'country': "CO",
+      'region': ""
+    },
+    'ip':"186.148.182.99"
+  }]);
+})
+//
+()
+
+;

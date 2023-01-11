@@ -1,0 +1,263 @@
+<style type=text/css">
+*{
+margin:1;
+padding:2; 
+
+}
+
+
+h1{
+    margin-top: 50px !important;
+    margin-bottom:0px !important;
+    margin-left:0px !important;
+    font-size:50px;
+    font-family:arial;
+    color:blue;
+      }
+      
+nav{
+    margin-bottom:10px;
+    width:1000px;
+	height:200px;
+    
+    position:center;
+}
+
+
+#menu{
+    margin: auto;
+    font-family: arial;
+      list-style-type: none;
+    margin: 80px -40px;
+    padding: -100px  10px;
+    width: 200px;
+     display:block;
+    *text-decoration:none; 
+}
+
+ ul ,ol{
+    list-style: none;
+}
+
+
+
+.submenu li ul{
+    display:block; 
+    float: left;
+    position: absolute;
+    min-width: 140px;
+     padding: 10px 15px; 
+        background color:red;
+}
+
+
+.menu1>li{
+    margin-top:000px;
+    position:relative;
+    display:inline-block;
+    
+}
+
+
+#menu ul{
+    <!--==============================menu izquierdo=================================-->
+   
+    *text-transform: uppercase;
+    background-color:#0E9CFA;
+    margin: 80px -10px;
+    padding: 0px  0px;
+    width: 200px;
+    
+}
+
+#menu ul :hover{
+background-color: yellow;
+}
+
+#menu li ul :hover{
+position: absolute;
+
+}
+
+#menu li :hover> ul{
+}
+
+#menu ul li a {
+    color: black;
+    padding: 20px 26px;
+    text-align: center;
+    display: block;
+    font:bold 25px "Trebuchet MS"; 
+
+}
+
+
+
+
+div#main{
+margin:auto;
+margin-left:200px;
+width:  1100px;
+height: 600px;
+background-color: white;
+
+}
+
+
+#PaginaCentral{
+float:left;
+margin-top:50px;
+width:750px;
+margin-left:150px;
+height: 800px;
+background-color: white;
+display:inline-block;
+}
+
+
+
+footer{
+    background-color:#0E9CFA;
+    bottom:-5px;
+    position:relative;
+    width:1500px;
+    margin-top:5px;
+    height: 150px;
+    font-family:arial;
+    font:bold 25px "Trebuchet MS"; 
+    display:inline-block;
+}
+
+
+footer2{
+    background-color:blue;
+    bottom:-5px;
+    position:relative;
+    width:1100px;
+    margin-top:500px;
+    height: 150px;
+    font-family:arial;
+    font:bold 25px "Trebuchet MS"; 
+    display:inline-block;
+}
+    
+
+p{
+    font-size: 18px;
+    line-height:20px;
+    font-family:arial;
+    text-align: justify;
+    margin-left:30px;
+    margin-right:30px;
+    color:black;   
+}
+
+
+p1{
+    font-size: 18px;
+    line-height:20px;
+    font-family:georgian;
+    text-align: justify;
+    margin-left:30px;
+    margin-right:30px;
+    color:green;   
+}
+p2{
+    font-size: 18px;
+    line-height:20px;
+    font-family:landscape;
+    text-align: justify;
+    margin-left:30px;
+    margin-right:30px;
+    color:blue;   
+}
+
+p3{
+    font-size: 18px;
+    line-height:20px;
+    font-family:capitalize;
+    text-align: justify;
+    margin-left:30px;
+    margin-right:30px;
+    color:red;   
+}
+p{
+    font-size: 18px;
+    line-height:20px;
+    font-family:arial;
+    text-align: justify;
+    margin-left:30px;
+    margin-right:30px;
+    color:black;   
+}
+
+
+p1{
+    font-size: 18px;
+    line-height:20px;
+    font-family:georgian;
+    text-align: justify;
+    margin-left:30px;
+    margin-right:30px;
+    color:green;   
+}
+p2{
+    font-size: 18px;
+    line-height:20px;
+    font-family:landscape;
+    text-align: justify;
+    margin-left:30px;
+    margin-right:30px;
+    color:blue;   
+}
+
+p3{
+    font-size: 18px;
+    line-height:20px;
+    font-family:capitalize;
+    text-align: justify;
+    margin-left:30px;
+    margin-right:30px;
+    color:red;   
+}s{
+    font-size: 60px;
+    line-height:40px;
+    font-family:arial;
+	background-color:#d8da3d 
+    text-align: justify;
+    margin-left:30px;
+    margin-right:30px;
+    color:black;   
+}
+
+
+s1{
+    font-size: 15px;
+    line-height:20px;
+    font-family:georgian;
+	background-color:#d8da3d 
+    text-align: justify;
+    margin-left:30px;
+    margin-right:30px;
+    color:green;   
+}
+s2{
+    font-size: 89px;
+    line-height:50px;
+    font-family:landscape;
+    text-align: justify;
+    margin-left:30px;
+	background-color:#d8da3d 
+    margin-right:30px;
+    color:blue;   
+}
+
+s3{
+    font-size: 18px;
+    line-height:20px;
+    font-family:capitalize;
+    text-align: justify;
+    margin-left:30px;
+    margin-right:30px;
+    color:red;   
+}
